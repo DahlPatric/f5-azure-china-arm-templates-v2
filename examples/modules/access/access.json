@@ -142,8 +142,7 @@
 			"Microsoft.Resources/deployments/*",
 			"Microsoft.Resources/subscriptions/read",
 			"Microsoft.Resources/subscriptions/resourceGroups/deployments/*",
-			"Microsoft.Storage/storageAccounts/listKeys/action",
-			"Microsoft.Support/*"
+			"Microsoft.Storage/storageAccounts/listKeys/action"
 		],
 		"telemetryDataActions": [
 			"Microsoft.Insights/Metrics/Write",
