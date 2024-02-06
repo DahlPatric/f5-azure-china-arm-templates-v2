@@ -6,7 +6,7 @@
       "value": true
     },
     "artifactLocation": {
-      "value": "f5-azure-arm-templates-v2/v3.0.0.0/examples/"
+      "value": "f5-azure-china-arm-templates-v2/main/examples/"
     },
     "bigIpExternalSelfIp01": {
       "value": "10.0.1.11"
