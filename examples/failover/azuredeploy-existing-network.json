@@ -3,7 +3,7 @@
   "contentVersion": "3.0.0.0",
   "parameters": {
     "templateBaseUrl": {
-      "defaultValue": "https://cdn.f5.com/product/cloudsolutions/",
+      "defaultValue": "https://github.com/DahlPatric/",
       "metadata": {
         "description": "The publicly accessible URL where the linked ARM templates are located."
       },
