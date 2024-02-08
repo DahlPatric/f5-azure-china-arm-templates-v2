@@ -170,7 +170,7 @@
 				"notDataActions": []
 			}
 		],
-		"keyVaultName": "[if(not(empty(parameters('secretId'))), variables('secretIdSplitArray')[1], concat(parameters('uniqueString'), 'kv'))]",
+		"keyVaultName": "[if(not(empty(parameters('secretId'))), variables('secretIdSplitArray')[1], concat(parameters('uniqueString'), '-kv'))]",
 		"assignableScopes": "[if(empty(parameters('customAssignableScopes')), createArray(resourceGroup().id), parameters('customAssignableScopes'))]",
 		"roleDefinitionName": "[guid(resourceGroup().id, string(parameters('customRolePermissions')), string(parameters('roleName')))]",
 		"secretIdSplitDelimiters": [ "https://", "[environment().suffixes.keyvaultDns]" ],
