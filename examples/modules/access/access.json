@@ -199,7 +199,7 @@
 			"tags": "[if(empty(parameters('tagValues')), json('null'), parameters('tagValues'))]",
 			"type": "Microsoft.ManagedIdentity/userAssignedIdentities"
 		},
-		{
+		/*{
 			"apiVersion": "2021-04-01-preview",
 			"condition": "[variables('createUserAssignedIdentity')]",
 			"dependsOn": [
@@ -214,7 +214,7 @@
 				"principalType": "ServicePrincipal"
 			},
 			"type": "Microsoft.Authorization/roleAssignments"
-		},
+		},*/
 		{
 			"apiVersion": "2022-07-01",
 			"condition": "[and(variables('createSecret'), variables('createUserAssignedIdentity'))]",
