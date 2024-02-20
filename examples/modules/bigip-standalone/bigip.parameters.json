@@ -30,7 +30,7 @@
       "value": "bigip01.local"
     },
     "image": {
-      "value": "f5-networks:f5-big-ip-best:f5-bigip-virtual-edition-25m-best-hourly:15.1.201000"
+      "value": "https://stloadbalancer001.blob.core.chinacloudapi.cn/cr-f5-bigip-images-001/F5-BIGIP-16.1.4.2-0.0.3-PAYG-Best-Plus-10Gbps-231201132931.vhd"
     },
     "instanceType": {
       "value": "Standard_D8s_v4"
