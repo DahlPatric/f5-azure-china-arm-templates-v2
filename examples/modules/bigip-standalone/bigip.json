@@ -536,7 +536,33 @@
             }
           }
         },
-        "storageProfile": "[if(variables('useCustomImage'), variables('storageProfileArray').customImage, variables('storageProfileArray').platformImage)]"
+        //"storageProfile": "[if(variables('useCustomImage'), variables('storageProfileArray').customImage, variables('storageProfileArray').platformImage)]"
+        "storageProfile": {
+            "osDisk": {
+                "createOption": "fromImage",
+                "managedDisk": {
+                    "storageAccountType": "Premium_LRS"
+                }
+            },
+            "imageReference": {
+                "id": "/subscriptions/630ce52b-ea81-492d-95d8-b3fab2e9f53a/resourceGroups/VolvoCarsCN_network-security-generic/providers/Microsoft.Compute/galleries/network_security_compute_gallery/images/f5-network/versions/6.1.4"
+            }
+        }
+        /*
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Linux",
+            "name": "F5-BIGIP-16.1.4.2-0.0.3-PAYG-Best-Plus-10Gbps-231201132931.vhd",
+            "createOption": "FromImage",
+            "image": {
+              "uri": "https://networksecuritygeneric.blob.core.chinacloudapi.cn/f5-template/F5-BIGIP-16.1.4.2-0.0.3-PAYG-Best-Plus-10Gbps-231201132931.vhd"
+            },
+            "vhd": {
+              "uri": "http://vmcapturetestdemo.blob.core.windows.net/vmcontainerd1bd9914-b1e8-44a0-a06c-663eedda8d1a/osDisk.d1bd9914-b1e8-44a0-a06c-663eedda8d1a.vhd"
+            },
+            "caching": "ReadOnly"
+          }
+        } */
       },
       "tags": "[union(variables('runtimeInitTag'), variables('bigIpPeerTag'), variables('cfeTag'), parameters('tagValues'))]",
       "zones": "[if(variables('useAvailabilityZones'), createArray(parameters('zone')), json('null'))]",
