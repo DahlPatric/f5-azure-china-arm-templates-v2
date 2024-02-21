@@ -388,7 +388,8 @@
     "offerToUse": "[if(variables('useCustomImage'), json('null'), variables('image')[1])]",
     "singleQuote": "'",
     "skipTelemetry": "[if(parameters('allowUsageAnalytics'), '', '--skip-telemetry')]",
-    "skuToUse": "[if(variables('useCustomImage'), json('null'), variables('image')[2])]",
+    //"skuToUse": "[if(variables('useCustomImage'), json('null'), variables('image')[2])]",
+    "skuToUse": "",
     "storageProfileArray": {
       "customImage": {
         "imageReference": {
